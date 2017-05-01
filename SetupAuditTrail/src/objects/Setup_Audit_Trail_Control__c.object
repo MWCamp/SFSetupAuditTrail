@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>Days_to_Retain__c</fullName>
+        <defaultValue>90</defaultValue>
+        <description>How many days of logs should be retained</description>
+        <externalId>false</externalId>
+        <label>Days to Retain</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Most_Recent_Imported_DT__c</fullName>
+        <description>The Date/Time of the most recently imported SetupAuditTrail record</description>
+        <externalId>false</externalId>
+        <label>Most Recent Imported DT</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <label>Setup Audit Trail Control</label>
+    <visibility>Protected</visibility>
+</CustomObject>
