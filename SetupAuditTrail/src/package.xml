@@ -12,5 +12,13 @@
         <members>Setup_Audit_Trail__c</members>
         <name>CustomObject</name>
     </types>
+    <types>
+        <members>Setup_Audit_Trail__c-Setup Audit Trail Layout</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>PermissionSet</name>
+    </types>
     <version>34.0</version>
 </Package>
