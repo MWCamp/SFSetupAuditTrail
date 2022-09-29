@@ -102,7 +102,7 @@ public with sharing class SVC_SetupAuditTrail {
      */
     public static void deleteOldEntries(Integer DaysToRetain)
     {
-		list<Setup_Audit_Trail__c> deleteEntries = Database.query('Select ID, CreatedDate__c from Setup_Audit_Trail__c where CreatedDate__c != LAST_N_DAYS:' + DaysToRetain + ' ORDER BY CreatedDate__c DESC Limit 9000');
+		list<Setup_Audit_Trail__c> deleteEntries = Database.query('Select ID, CreatedDate__c from Setup_Audit_Trail__c where CreatedDate__c != LAST_N_DAYS:' + DaysToRetain + ' ORDER BY CreatedDate__c DESC LIMIT 9500');
  
         if(deleteEntries.size() > 0) {
            delete deleteEntries;
